@@ -8,3 +8,15 @@ WIN_COMBINATIONS = [
   [1,4,7], #middle column
   [2,5,8] #right column
 ]
+
+def display_board(board)
+  puts " #{board[0]} | #{board[1]} | #{board[2]} "
+  puts "-----------"
+  puts " #{board[3]} | #{board[4]} | #{board[5]} "
+  puts "-----------"
+  puts " #{board[6]} | #{board[7]} | #{board[8]} "
+end
+
+def input_to_index(player_input)
+  player_input.to_i - 1 #converts the number from string to integer and subtracts 1 for array input_to_index
+end
