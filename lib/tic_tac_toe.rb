@@ -43,6 +43,7 @@ def turn(board)
   if valid_move?(board, index)
     move(board, index, "X")
   else
+    puts ("Please enter a valid move.")
     turn(board)
   end
 end
