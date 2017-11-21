@@ -92,6 +92,9 @@ def winner(board)
   end
 end
 
-def play
+def play(board)
   puts "Please enter 1-9:"
+  until (full?(board) = true)
+    turn(board)
+  end
 end
