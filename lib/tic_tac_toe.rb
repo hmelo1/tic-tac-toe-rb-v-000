@@ -20,3 +20,7 @@ end
 def input_to_index(player_input)
   player_input.to_i - 1 #converts the number from string to integer and subtracts 1 for array input_to_index
 end
+
+def move(board, index, current_player)
+  board[index] = current_player
+end
