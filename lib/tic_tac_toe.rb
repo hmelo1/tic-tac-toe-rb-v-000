@@ -72,3 +72,22 @@ def won?(board)
   end
   return false
 end
+
+def full?(board)
+  board.all?{|player| player == "X" || player == "O"}
+end
+
+def draw?(board)
+  full?(board) && !won?(board)
+end
+
+def over?(board)
+  full?(board) || won?(board) || draw?(board)
+end
+
+def winner(board)
+  if (won?(board))
+    win_index = won?(board)[0]
+    return board[win_index]
+  end
+end
