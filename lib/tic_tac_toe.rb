@@ -94,7 +94,7 @@ end
 
 def play(board)
   puts "Please enter 1-9:"
-  until (full?(board) = true)
+  until (full?(board) == true)
     turn(board)
   end
 end
